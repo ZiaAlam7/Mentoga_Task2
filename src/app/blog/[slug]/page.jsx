@@ -1,10 +1,11 @@
-// app/blog/[slug]/page.jsx
+export const dynamic = 'force-dynamic';
+
 import { notFound } from 'next/navigation';
 import axios from 'axios';
 import Link from 'next/link';
 
+const path_name = process.env.NEXT_PUBLIC_BASE_URL || 'https://mentoga-task2.vercel.app';
 
-const path_name = 'mentoga-task2.vercel.app' || process.env.NEXT_PUBLIC_BASE_URL
 async function getBlog(slug) {
   try {
     const response = await axios.post(`${path_name}/api/slug`, { slug });
