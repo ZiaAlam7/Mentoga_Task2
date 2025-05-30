@@ -3,9 +3,11 @@ import { notFound } from 'next/navigation';
 import axios from 'axios';
 import Link from 'next/link';
 
+
+const path_name = 'mentoga-task2.vercel.app' || process.env.NEXT_PUBLIC_BASE_URL
 async function getBlog(slug) {
   try {
-    const response = await axios.post(`${process.env.NEXT_PUBLIC_BASE_URL}/api/slug`, { slug });
+    const response = await axios.post(`${path_name}/api/slug`, { slug });
 
     if (response.status !== 200) return null;
 
