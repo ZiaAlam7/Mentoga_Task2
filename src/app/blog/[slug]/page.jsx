@@ -1,35 +1,22 @@
-// app/blog/[slug]/page.tsx
+// app/blog/[slug]/page.jsx
 import { notFound } from 'next/navigation';
 import axios from 'axios';
 import Link from 'next/link';
 
-type Blog = {
-  title: string;
-  content: string;
-  slug: string;
-  author: string;
-};
-
-type Props = {
-  params: {
-    slug: string;
-  };
-};
-
-async function getBlog(slug: string): Promise<Blog | null> {
+async function getBlog(slug) {
   try {
     const response = await axios.post(`${process.env.NEXT_PUBLIC_BASE_URL}/api/slug`, { slug });
 
     if (response.status !== 200) return null;
 
-    return response.data as Blog;
+    return response.data;
   } catch (error) {
     console.error('Error fetching blog by slug:', error);
     return null;
   }
 }
 
-export default async function BlogPage({ params }: Props) {
+export default async function BlogPage({ params }) {
   const blog = await getBlog(params.slug);
 
   if (!blog) return notFound();
