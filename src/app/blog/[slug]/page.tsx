@@ -10,22 +10,25 @@ type Blog = {
   author: string;
 };
 
+type BlogPageProps = {
+  params: {
+    slug: string;
+  };
+};
+
 async function getBlog(slug: string): Promise<Blog | null> {
   try {
     const response = await axios.post('http://localhost:3000/api/slug', { slug });
-
     if (response.status !== 200) return null;
-
     return response.data as Blog;
   } catch (error) {
-    console.error('Error sending data:', error);
+    console.error('Error fetching blog:', error);
     return null;
   }
 }
 
-export default async function BlogPage({ params }: { params: { slug: string } }) {
+export default async function BlogPage({ params }: BlogPageProps) {
   const blog = await getBlog(params.slug);
-
   if (!blog) return notFound();
 
   return (
