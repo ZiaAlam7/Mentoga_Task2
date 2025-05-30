@@ -23,6 +23,7 @@ export default function EditorLogin() {
     }
   } catch (err) {
     setError('Invalid credentials');
+    console.log(err)
   }
 };
 

@@ -1,5 +1,4 @@
 import { NextResponse } from 'next/server';
-import { cookies } from 'next/headers';
 import { serialize } from 'cookie';
 import  dbConnect from '@/lib/dbConnect';
 import { Editor } from '../../../../models/editor_models';

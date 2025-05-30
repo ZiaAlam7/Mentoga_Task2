@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { useBlogs, Blog } from "@/context/BlogContext";
+import { useBlogs} from "@/context/BlogContext";
 
 export default function Home() {
   const { blogs, loading, error } = useBlogs();
