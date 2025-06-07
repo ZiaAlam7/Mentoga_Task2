@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Web Development Internship Task 2 - Developing LifeVibe a Blog Platform with Content Management
 
-## Getting Started
+- **Description**
+Develop a blog platform for a fictional lifestyle magazine, "LifeVibe," with a front-end for readers and a back-end CMS for editors to manage posts, using Node.js, Express, and MongoDB.
 
-First, run the development server:
+- **Objective**
+Gain expertise in full-stack development, REST API creation, and database integration.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🔗 Live Preview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+👉 [Click here to view the live app](https://mentoga-task2.vercel.app/ )
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠 Tech Stack Used
 
-## Learn More
+- **JavaScript** – Language
+- **Next.js** – Full-stack React framework for SSR and routing
+- **React.js** – Component-based UI library
+- **TailwindCSS** – Utility-first CSS framework for styling
+- **MongoDB** – NoSQL database for backend data storage
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Showing Blog with Category and Author
+- Full page view of Blogs
+- Author Login 
+- Create, Edit and Delete a Blog
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+##  Credential of 3 Editors 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Name: ethan clarke 
+Pass: ethan101 
+
+Name: jacob turner 
+Pass: jacob202 
+
+Name: noah mitchell 
+Pass: noah303
